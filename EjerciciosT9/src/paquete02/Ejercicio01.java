@@ -25,14 +25,14 @@ public class Ejercicio01 {
         int respuesta;
         
         for (int i = 0; i < respuestas.length; i++) { 
-            respuesta = respuestas[i]; 
+            respuesta = respuestas[i]; // 1 
                     
             if ((respuesta >= 1) || (respuesta <=5)){
-                valoresRangos[0] = valoresRangos[0] + 1;
+                valoresRangos[0] = valoresRangos[0] + 1; // 1
                 
             }else{
                     
-                if ((respuesta >= 6) || (respuesta <=10)){
+                if ((respuesta >= 6) || (respuesta <=10)){ 
                     valoresRangos[1] = valoresRangos[1] + 1;
                 }else{
                             

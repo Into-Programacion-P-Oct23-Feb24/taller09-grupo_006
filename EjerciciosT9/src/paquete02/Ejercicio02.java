@@ -21,7 +21,8 @@ public class Ejercicio02 {
         String[] rangos = {"1-5", "6-10", "11-15", "16-20"};
         int[] valoresRangos = new int[4]; // {0, 0, 0, 0, 0}
         int respuesta;
-
+        // Se crea un nuevo arreglo
+        int[] fuera_de_rango = new int[1];
         for (int i = 0; i < respuestas.length; i++) {
             respuesta = respuestas[i]; // -1
             if ((respuesta >= 1) && (respuesta <= 5)) {
@@ -36,10 +37,16 @@ public class Ejercicio02 {
                         if ((respuesta >= 16) && (respuesta <= 20)) {
                             valoresRangos[3] = valoresRangos[3] + 1;
                         }
-
                     }
                 }
 
+            }
+        }
+        // Este ciclo repetitivo se encarga de contar los numeros mayores a 20 o fuera del rango
+        for(int i = 0; i<respuestas.length;i++){
+            respuesta = respuestas[i];
+            if (respuesta > 20){
+                fuera_de_rango[0] = fuera_de_rango[0]+ 1;
             }
         }
 
@@ -47,6 +54,10 @@ public class Ejercicio02 {
             System.out.printf("Rango %s - valor %d\n", rangos[i],
                     valoresRangos[i]);
         }
+        
+        // Se presenta por pantalla el total acumulado
+        System.out.printf("Fuera de Rango - valor %d\n",
+                    fuera_de_rango[0]);
 
     }
 
