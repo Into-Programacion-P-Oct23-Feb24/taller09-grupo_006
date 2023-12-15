@@ -21,20 +21,34 @@ public class Ejercicio03 {
         double promedio;
         int media_arriba = 0;
         int media_abajo = 0;
+        
+        // Esta estructura repetitiva se encarga de sumar todos los valores del
+        // arreglo
         for (int i = 0; i < arreglo.length; i++) {
             suma = suma + arreglo[i];
         }
+        
+        // Se saca el promedio
         promedio = suma / arreglo.length;
+         
         for (int m = 0; m < arreglo.length; m++) {
+            // Este condicional cuenta el numero de elementos que estan arriba 
+            // de la media aritmetica
             if (arreglo[m] > promedio) {
                 media_arriba++;
             } else {
+                // Este condicional cuenta el numero de elementos que estan por 
+                // debajo de la media aritmetica
                 if (arreglo[m] < arreglo.length) {
                     media_abajo++;
                 }
             }
         }
-        System.out.printf("Promedio:%4f\n Numero por encima:%d\n Numeros por debajo:%d\n",
+        
+        // Se presentan los datos
+        System.out.printf("Promedio: %.2f\n"
+                + "Numero de elementos superiores al promedio: %d\n"
+                + "Numeros de elementos inferiores al promedio promedio: %d\n",
                 promedio, media_arriba, media_abajo);
 
     }
