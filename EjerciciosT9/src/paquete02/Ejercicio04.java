@@ -23,6 +23,8 @@ public class Ejercicio04 {
         String[] promediosCualitativos = new String[7];
         String acumulador = "";
 
+        // La estructura repetitiva for, se repite para comparar todos los valores
+        // del arreglo y poder asignar en otro arreglo, el promedio Cualitativo
         for (int i = 0; i < estudiantes.length; i++) {
             if (promedios[i] >= 0 && promedios[i] <= 5.9) {
                 promediosCualitativos[i] = "Regular";
@@ -35,10 +37,14 @@ public class Ejercicio04 {
             }
             
         }
+        // El for asigna valores tipo cadena al acumulador
         for (int i = 0; i < promediosCualitativos.length; i++) {
-               acumulador = String.format("%s%s promedio: %f promedio cualitativo %s\n",acumulador
+               acumulador = String.format("%s%s promedio: %.2f "
+                       + "promedio cualitativo %s\n",acumulador
                        , estudiantes[i], promedios[i],promediosCualitativos[i]);
             }
+        
+        // Se presenta por pantalla el resultado de acumulador
         System.out.printf("%s",acumulador);
 
     }

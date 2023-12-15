@@ -41,7 +41,8 @@ public class Ejercicio01 {
                     }else{
                         if ((respuesta >= 16) || (respuesta <=20)){
                             valoresRangos[3] = valoresRangos[3] + 1;//1+1
-                        }
+                        } 
+                        
                     
                     }
                 }
@@ -54,6 +55,16 @@ public class Ejercicio01 {
             System.out.printf("Rango %s - valor %d\n", rangos[i],
                     valoresRangos[i]);
         }
+        /*
+            Respuesta: 
+            El objetivo de este programa es el de contar los valores segun los 
+            rangos que tiene el arreglo respuestas, sin embargo este programa
+            falla en el proceso por usar elementos "||" en vez de "&&", 
+            viendose reflejado en el resultado, contando todos los valores mayores
+            a 1, ingresando solamente a la condicional de la linea 27.
+        
+            Para arreglarlo simplemente se debera cambiar los "||" por "&&"
+        */
         
     }
     

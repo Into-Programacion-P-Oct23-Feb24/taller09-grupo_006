@@ -52,6 +52,15 @@ public class Ejercicio00 {
         
         Estudiante:Luis, materia 1: 8.10, materia 2: 7.9. Promedio final: 8,0000
         */
+        
+        /* 
+            Respuesta: 
+            Es un programa que su principal funcion es la de sacar 
+            promedios de 5 estudiantes apartir de dos notas, usando 1 arreglo 
+            para acumular el promedio, y luego mediante un ciclo repetitivo for
+            usando un acumulador se guardan los valores que se mostraran por
+            pantalla.
+        */
     }
 
 }

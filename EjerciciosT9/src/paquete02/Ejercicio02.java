@@ -42,9 +42,11 @@ public class Ejercicio02 {
 
             }
         }
+        
         // Este ciclo repetitivo se encarga de contar los numeros mayores a 20 o fuera del rango
         for(int i = 0; i<respuestas.length;i++){
             respuesta = respuestas[i];
+            // El condicional identifica los valores mayores a 20 de respuesta
             if (respuesta > 20){
                 fuera_de_rango[0] = fuera_de_rango[0]+ 1;
             }
@@ -56,7 +58,7 @@ public class Ejercicio02 {
         }
         
         // Se presenta por pantalla el total acumulado
-        System.out.printf("Fuera de Rango - valor %d\n",
+        System.out.printf("fuera-de-rango valor %d\n",
                     fuera_de_rango[0]);
 
     }
